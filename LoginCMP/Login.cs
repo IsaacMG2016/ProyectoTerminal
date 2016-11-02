@@ -89,7 +89,12 @@ namespace LoginCMP
 
         private void Login_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            System.Console.WriteLine("AL ACTIVAR EL CHECK SE DEBE GUARDAR EL USUARIO Y CONTRASEÑA *~*");
         }
     }
 }
