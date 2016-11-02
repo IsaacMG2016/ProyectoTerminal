@@ -1,4 +1,6 @@
-﻿namespace LoginCMP
+﻿using System;
+
+namespace LoginCMP
 {
     partial class Login
     {
@@ -100,7 +102,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(391, 169);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 37);
@@ -163,6 +165,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

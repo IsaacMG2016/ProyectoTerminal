@@ -34,17 +34,17 @@ namespace LoginCMP
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            textBox4.PasswordChar = '$';
+            textBox4.PasswordChar = '*';
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            textBox5.PasswordChar = '$';
+            textBox5.PasswordChar = '*';
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            textBox6.PasswordChar = '$';
+            textBox6.PasswordChar = '*';
         }
 
         private void guardar()
@@ -53,7 +53,7 @@ namespace LoginCMP
             ssql = "insert into user(id_user,nombre,apellido,user_name,pass,confirm,clave)";
             ssql += " values(@id_user,@nombre,@apellido,@user_name,@pass,@confirm,@clave)";
 
-            string connstring = ConfigurationManager.ConnectionStrings["MyConnectionString"].ConnectionString;
+            string connstring = ConfigurationManager.ConnectionStrings["My conexion"].ConnectionString;
             NpgsqlConnection conn = new NpgsqlConnection(connstring);
             conn.Open();
 
