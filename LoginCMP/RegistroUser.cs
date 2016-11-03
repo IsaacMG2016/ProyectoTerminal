@@ -92,6 +92,7 @@ namespace LoginCMP
 
             if(!textBox1.Text.Equals("") && !textBox2.Text.Equals("") && !textBox3.Text.Equals("") && !textBox4.Text.Equals("") && !textBox5.Text.Equals("") && textBox6.Text.Equals("qwerty"))
             {
+                //guardar();
                 System.Console.WriteLine("DENTRO DEL IF");
                 RegistroUser.ActiveForm.Close();
             }

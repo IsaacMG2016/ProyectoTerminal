@@ -26,5 +26,10 @@ namespace LoginCMP
         {
             ConsolaMp.ActiveForm.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("AGUEVO JAJAJA", "*******");
+        }
     }
 }

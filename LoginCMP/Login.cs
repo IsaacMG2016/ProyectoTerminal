@@ -22,6 +22,10 @@ namespace LoginCMP
 
         Nuevo comentario : NO SE COMO ACTUALIZAR PARA QUE SE VEAN 
         LOS CAMBIOS REFLEJADOS.
+
+        El CHINGON DEL IRVING YA PUDO ARREGLAR MI DESMADRE DE
+        EL PINCHE ARCHIVO CULERO DE LAS PINCHES PUTADAS DEL 
+        RUBEN.
      */
     public partial class Login : Form
     {
