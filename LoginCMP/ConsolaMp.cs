@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace LoginCMP
 {
+    /*
+     Ventana Principal de la Consola
+     Revisar porque no se guardan los cambios
+     de forma Local.
+     */
     public partial class ConsolaMp : Form
     {
         public ConsolaMp()
