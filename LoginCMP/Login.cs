@@ -11,6 +11,15 @@ using System.Windows.Forms;
 
 namespace LoginCMP
 {
+    /*Esto es un comentario para ver lo reflejado 
+     en el Git Hub.
+     Módulo de Inicio de Sesión para la consola PMC
+        ** PROCESS MANAGEMENT CONOSOLE **
+     
+        Autor : Isaac MG
+        Fecha : 02/11/2016
+        Versión: 1.0    
+     */
     public partial class Login : Form
     {
         int intentos = 0;
