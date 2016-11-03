@@ -19,6 +19,9 @@ namespace LoginCMP
         Autor : Isaac MG
         Fecha : 02/11/2016
         Versión: 1.0    
+
+        Nuevo comentario : NO SE COMO ACTUALIZAR PARA QUE SE VEAN 
+        LOS CAMBIOS REFLEJADOS.
      */
     public partial class Login : Form
     {
