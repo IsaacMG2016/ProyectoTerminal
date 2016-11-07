@@ -50,7 +50,7 @@ namespace LoginCMP
         private void guardar()
         {
             String ssql;
-            ssql = "insert into user(id_user,nombre,apellido,user_name,pass,confirm,clave)";
+            ssql = "insert into \"user\"(id_user,nombre,apellido,user_name,pass,confirm,clave)";
             ssql += " values(@id_user,@nombre,@apellido,@user_name,@pass,@confirm,@clave)";
 
             string connstring = ConfigurationManager.ConnectionStrings["My conexion"].ConnectionString;
@@ -68,7 +68,7 @@ namespace LoginCMP
             comm.Parameters.Add("@clave", NpgsqlTypes.NpgsqlDbType.Varchar);
 
 
-            comm.Parameters["@id_user"].Value = 2;
+            comm.Parameters["@id_user"].Value = 3;
             comm.Parameters["@nombre"].Value = textBox1.Text;
             comm.Parameters["@apellido"].Value = textBox2.Text;
             comm.Parameters["@user_name"].Value = textBox3.Text;
@@ -77,7 +77,8 @@ namespace LoginCMP
             comm.Parameters["@clave"].Value = textBox6.Text;
 
 
-            comm.ExecuteNonQuery();
+            int filas = comm.ExecuteNonQuery();
+            System.Console.WriteLine("filas "+ filas);
         }
 
 
@@ -92,7 +93,7 @@ namespace LoginCMP
 
             if(!textBox1.Text.Equals("") && !textBox2.Text.Equals("") && !textBox3.Text.Equals("") && !textBox4.Text.Equals("") && !textBox5.Text.Equals("") && textBox6.Text.Equals("qwerty"))
             {
-                //guardar();
+                guardar();
                 System.Console.WriteLine("DENTRO DEL IF");
                 RegistroUser.ActiveForm.Close();
             }
