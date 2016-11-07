@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modulo;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -90,7 +91,7 @@ namespace LoginCMP
         /*Ejecucion del Hilo que se levanta al iniciar la consola*/
         public void showForm()
         {
-            ConsolaMp consola = new ConsolaMp();
+            Modulo.MenuIni consola = new MenuIni();
             consola.ShowDialog();
         }
 
